@@ -1,15 +1,16 @@
 body {
-    background-color: #2a3342;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
+
 
 header {
     height: 324px;
     background: url(../assets/headerbackground.png) center/cover;
     border-color: #000000;
-    border-width: 1px;
-    border-style: dashed;
     margin-bottom: 92px;
-    opacity: 0.50;
+    opacity: 0.9;
 }
 
 .header {
@@ -150,7 +151,6 @@ li {
     width: 800px;
     height: 190px;
     background-color: #f8f8f8;
-
     display: flex;
     align-items: center;
 }
@@ -192,7 +192,6 @@ img {
 }
 
 .box span {
-    border: 1px dashed #5863f8;
     font-family: "Poppins";
     font-size: 14px;
     font-weight: bold;
@@ -275,7 +274,6 @@ div.hr-line {
     width: 100%;
     height: 190px;
     background-color: #f8f8f8;
-    border: 2px solid greenyellow;
     flex-wrap: wrap;
     margin-top: 71px;
     display: flex;
@@ -395,6 +393,7 @@ footer h1 {
     font-style: normal;
     text-align: left;
     color: #ffffff;
+    margin-bottom: 22px;
 }
 
 footer h2 {
@@ -431,6 +430,7 @@ footer span {
 
 .rounded-social-buttons {
     text-align: left;
+    margin-bottom: 56px;
 
 }
 
@@ -501,4 +501,39 @@ footer span {
     color: #bb0000;
     background: #fefefe;
     border-color: #bb0000;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+}
+
+.footsection1 a,
+.footsection2 a {
+    color: #5863f8;
+}
+
+.footsection1 li,
+.footsection2 li {
+    margin-bottom: 13px;
+}
+
+.footsection3 a {
+    color: #ffffff;
+}
+
+.footsection3 div {
+    margin-bottom: 23px;
+}
+
+.footsection1,
+.footsection2,
+.footsection3 {
+    flex: 1;
+    margin: 0 10px; 
+}
+
+main {
+    margin-bottom: 0;
 }
