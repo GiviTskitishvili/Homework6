@@ -150,8 +150,71 @@ li {
     width: 800px;
     height: 190px;
     background-color: #f8f8f8;
-    border: 2px solid greenyellow;
-    flex-wrap: wrap;
+
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    flex: 0 0 auto; 
+}
+
+img {
+    height: auto;
+
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start; 
+    padding-bottom: 53px;
+    padding-left: 19px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text-group {
+    width: 100%;
+}
+
+.box span,
+.box h2,
+.box h3 {
+    margin: 0; 
+}
+
+.box span {
+    border: 1px dashed #5863f8;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: bold;
+    color: #5863f8;
+}
+
+.box h2 {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.box h3 {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 500;
+    color: #b1b1b1;
+}
+
+.button-container {
+    flex: 0 0 auto; 
 }
 
 .badge {
@@ -194,4 +257,59 @@ div.hr-line {
     border: 2px solid greenyellow;
     flex-wrap: wrap;
     margin-top: 71px;
+}
+
+
+.arrow-button {
+    display: flex;
+    color: #000000;
+    background-color: #5863f8;
+    height: 190px;
+    width: 60px;
+    padding: 10px 16px;
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+}
+
+.arrow-button>.arrow {
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 6px;
+    transition: all .3s ease;
+}
+
+.arrow-button>.arrow::before {
+    display: block;
+    background-color: currentColor;
+    width: 3px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+.arrow-button:hover>.arrow {
+    transform: rotate(-45deg) translate(4px, 4px);
+    border-color: text-hover-color;
+}
+
+.arrow-button:hover>.arrow::before {
+    opacity: 1;
+    width: 8px;
+}
+
+.arrow-button:hover {
+    background-color: #5863f8;
 }
